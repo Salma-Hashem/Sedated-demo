@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SEDATED — Preview Shop</title>
+  <meta name="description" content="SEDATED — Male Aesthetic Performance. Preview site for trademark specimen.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">SEDATED</div>
+    <nav>
+      <a href="#shop" class="shop-btn">Shop</a>
+    </nav>
+  </header>
+
+  <!-- Intro / splash -->
+  <section class="intro" aria-label="Intro">
+    <img class="intro-bg" src="assets/hero.jpg" alt="SEDATED collage background">
+    <div class="intro-overlay"></div>
+    <div class="intro-center">
+      <img class="emblem" src="assets/emblem.svg" alt="Sedated emblem">
+      <form class="signup" onsubmit="return join(event)">
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <button aria-label="Join mailing list">✉️</button>
+      </form>
+      <div class="microcopy">Sign up for launch updates.</div>
+    </div>
+  </section>
+
+  <!-- Shop -->
+  <main id="shop" class="container">
+    <h2 class="section-title">Shop — Preview</h2>
+    <p class="section-sub">Prototype items shown for trademark specimen. Not for sale. Use the Pre‑Order button to register interest.</p>
+
+    <div class="grid">
+      <!-- Product 1 -->
+      <article class="card">
+        <div class="media">
+          <img src="assets/products-a.jpg" alt="Boxing shorts and poster — Sedated">
+        </div>
+        <div class="body">
+          <h3>SEDATED Destroy Shorts</h3>
+          <p>Glossy red fight shorts with black trim and SEDATED crest. Limited pre‑launch edition.</p>
+          <div class="meta">
+            <span class="price">$98</span>
+            <button onclick="preorder('SEDATED Destroy Shorts')" class="pre">Pre‑Order</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 2 -->
+      <article class="card">
+        <div class="media crop-left">
+          <img src="assets/products-b.jpg" alt="Blue camera and sling bag — Sedated">
+        </div>
+        <div class="body">
+          <h3>SEDATED Sling + Camera</h3>
+          <p>Utility sling with DESTROY patch and branded 35mm camera mock. Rugged look, street‑ready.</p>
+          <div class="meta">
+            <span class="price">$120</span>
+            <button onclick="preorder('SEDATED Sling + Camera')" class="pre">Pre‑Order</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 3 -->
+      <article class="card">
+        <div class="media crop-right">
+          <img src="assets/products-a.jpg" alt="Grey sweatpants — Sedated">
+        </div>
+        <div class="body">
+          <h3>SEDATED Heavy Sweatpants</h3>
+          <p>Premium fleece with oversized vertical SEDATED print. Cut for a relaxed, athletic silhouette.</p>
+          <div class="meta">
+            <span class="price">$88</span>
+            <button onclick="preorder('SEDATED Heavy Sweatpants')" class="pre">Pre‑Order</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 4 -->
+      <article class="card">
+        <div class="media">
+          <img src="assets/products-b.jpg" alt="Red jersey and hoop — Sedated">
+        </div>
+        <div class="body">
+          <h3>SEDATED 03A Jersey</h3>
+          <p>Game‑day satin with embroidered numbering and contrast side panels. Designed to turn heads.</p>
+          <div class="meta">
+            <span class="price">$110</span>
+            <button onclick="preorder('SEDATED 03A Jersey')" class="pre">Pre‑Order</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 5 -->
+      <article class="card">
+        <div class="media crop-center">
+          <img src="assets/products-a.jpg" alt="Poster / zine — Sedated">
+        </div>
+        <div class="body">
+          <h3>SEDATED Visual Zine</h3>
+          <p>Issue 001 featuring the visual DNA of SEDATED — posters, textures, and process imagery.</p>
+          <div class="meta">
+            <span class="price">$24</span>
+            <button onclick="preorder('SEDATED Visual Zine')" class="pre">Pre‑Order</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Product 6 -->
+      <article class="card">
+        <div class="media">
+          <img src="assets/products-b.jpg" alt="Towel and beach scene — Sedated">
+        </div>
+        <div class="body">
+          <h3>SEDATED Terry Towel</h3>
+          <p>Oversized beach towel in heavyweight terry — bold SEDATED mark, sun‑bleached attitude.</p>
+          <div class="meta">
+            <span class="price">$48</span>
+            <button onclick="preorder('SEDATED Terry Towel')" class="pre">Pre‑Order</button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div>© <span id="year"></span> SEDATED — Preview site for trademark filing.</div>
+      <div class="fine">No transactions are processed on this site. “Pre‑Order” opens an email to register interest.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
